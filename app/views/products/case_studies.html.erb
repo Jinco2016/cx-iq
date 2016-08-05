@@ -1,0 +1,149 @@
+<style>
+.content-wrap > .content {
+  height: auto;
+  min-height: 630px;
+}
+.m_center_image {
+    float: left;
+    height: 360px;
+    margin: 0 !important;
+    width: 60px;
+}
+.m_left_text {
+    border-bottom: 2px solid #c7e0fb;
+    border-left: 2px solid #c7e0fb;
+    border-top: 2px solid #c7e0fb;
+    float: left;
+    height: 355px;
+    width: 47%;
+    margin-right: -2px;
+}
+.m_right_text {
+    border-bottom: 2px solid #c7e0fb;
+    border-right: 2px solid #c7e0fb;
+    border-top: 2px solid #c7e0fb;
+    float: left;
+    height: 355px;
+    width: 47%;
+    margin-left: -13px;
+}
+.m_left_text > span {
+  background: none repeat scroll 0 0 #c9e1fb;
+  float: left;
+  font-weight: bold;
+  height: 33px;
+  width: 365px;
+  padding: 13px 10px 0px 10px;
+}
+.m_right_text > span {
+  background: none repeat scroll 0 0 #c9e1fb;
+  float: left;
+  font-weight: bold;
+  height: 33px;
+  width: 368px;
+  padding: 13px 0px 0px 21px;
+}
+.m_left_text > p, .m_right_text > p  {
+  width: auto !important;
+}
+#tabs-products p{
+  height: auto;
+}
+</style>
+
+<% content_for :header do -%>
+  <script src="/javascripts/jquery.tabs.pack.js" type="text/javascript"></script>
+  <script type="text/javascript">
+          $(function() {
+
+                $('#tabs-products').tabs({ fxFade: true, fxSpeed: 'slow' });
+     
+          });
+  </script>
+  <link rel="stylesheet" href="/css/tab.css" type="text/css" media="print, projection, screen">
+<% end -%>
+<% 
+  @menu_current = "products" 
+  @page_title = "Case Studies - Feedback from Customer Analysis"
+%>
+<h1 style="padding-left: 50px;">Case Studies</h1>
+<div class="share-icons" style="left:820px">
+      <div class="facebook"><a href="http://www.facebook.com/home.php#!/pages/Amplified-Analytics/125557687467210" title="Facebook"></a></div>
+      <div class="mail"><a href="mailto:support@cx-iq.com" title="Mail"></a></div>
+      <div class="twitter"><a href="http://twitter.com/piplzchoice" title="Twitter"></a></div>
+      <!-- <div class="fav"><a href="#" title="FAV"></a></div>
+      <div class="plus"><a href="#" title="Plus"></a></div> -->
+</div>
+<div id="tabs-products" style="top: 131px;">
+	<ul style="top: 85px;"  class="tabs-nav">
+    	<li class="first tabs-selected"><a href="#CI">An Amazon Best Seller</a></li>
+        <li><a href="#MI">B2B Software Manufacturer</a></li>
+        <li class="last"><a href="#BEA">Restaurant Developer</a></li>
+    </ul>
+    <div id="CI" style="top: 131px;" class="tabs-container">
+  <div class="m_left_text">
+  <span>Finding the white spaces in a crowded market</span>
+  <p>A global audio-equipment maker help  it enter an already-crowded accessory market<br><br>Four days after receiving the client’s request, 
+  CX-IQ delivered a report analyzing 12,743 online customer reviews of competing products <br><br>The report provided detailed insight into<br><br> 
+  - What customers disliked about the competition<br>
+  - What customers wanted in an ideal product</p>
+    </div>
+    <img src="/images/m_center.png" class="m_center_image">
+        <div class="m_right_text">
+        <span>Client impact: An Amazon Best Seller </span>
+        <p>Client designed and marketed a product meeting customers’ ideal specs<br><br>Client’s new accessory became a category killer, 
+          with sales exceeding five closest competitors combined<br><h6 style="text-align: center; padding: 0px; margin: 0px;">Client’s Product v Competition<br>
+        (3 Months after Client-Product Launch)</h6></p>
+        <img src="/images/m_bar.png" class="m_bar_image">
+      </p>
+    </div>
+    </div>
+    <div id="MI" style="top: 131px;" class="tabs-container tabs-hide">
+    	<img src="/images/ScrShoot-CI-small.jpg" alt="Customer Intelligence" />
+    	<p style="width: 480px; top: 101px;">As a B2B Software Manufacturer who sources most of our leads through our
+ website, we are obviously concerned about how visitors to our site feel
+ about it. We used to ask customers to give us their feedback through
+ online surveys, but the results were not very useful or dynamic— some
+ customers would leave a few comments, but most just would rate and score
+ our questions as asked. We really wanted to establish a meaningful
+ dialogue with them as individual users of our software. Like many
+ businesses, we had also tried a customer forum; however, all the survey
+ comments, forum communications and even our sales force notes could not
+ help us to parse any actionable insights out of the endless chatter and
+ stories. That is, until we found Customer Experience IQ and their Customer
+ Intelligence Analysis software tool. CI analysis was just the solution we
+ needed to help cull clear signals and data out of all the “noise”. Now, we
+ encourage customers on our website to tell their stories as elaborately as
+ they want and in their own words. We use the Customer Intelligence we
+ gather to help us manage our release scopes and schedules based on this
+ detailed customer feedback. We are even considering publishing a CI
+ analysis summary and an associated next release plan, so that our
+ customers can see that their voice is truly driving our decisions.
+ Working with Customer Experience IQ has really enhanced our dialogue with
+ customers and helped us perfect our offerings.</p>
+    </div>
+    <div id="BEA" style="top: 131px;" class="tabs-container tabs-hide">
+    	<img src="/images/ScrShoot-BEA-small.jpg" alt="Customer Intelligence" />
+    	<p style="width: 480px;">Having run 2 high-end restaurants in San Jose successfully, I decided to
+ court some new, potential investors with the hopes of opening a third
+ restaurant in a new part of the city. The catch was that this time around
+ the investors predicated funding on my developing a concise business plan.
+ Since I had little experience with market research, I needed to outsource
+ the work. Unfortunately, most bids I received were prohibitively expensive
+ or entirely generic in their approach. Then one of my investors turned me
+ on to online customer opinion mining and I found Customer Experience IQ. From
+ go, they were right on target— they didn’t need me to come up with
+ assumptions about the profile or demographics of my target market.
+ Instead, I just gave them the names of 3 or 4 successful restaurants in my
+ niche to use as reference. Customer Experience IQ was then able to use this
+ information to source detailed information on my contemporaries  online
+ that I used to create a roadmap for my new venture. It was a seamless and
+ elegant solution to my problem— the results were in my hands in a matter
+ of days and the cost was 20% below the lowest quote I had received from
+ other vendors. We’ve been open now for 5 months and I can safely say that
+ I have never experienced such a fast ramp-up after launching a restaurant.
+</p>
+    </div>
+</div>
+<div class="white-content-box" style="top: 131px;"></div>
+<div class="BTN-shedule-live-demo" style="top: 540px; left: 678px;"><a href="/Contact-Us?schedule_demo=true"><img src="/images/button-schedule-demo.png" alt="Case Study" border="0" /></a></div>
