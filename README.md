@@ -1,2 +1,2 @@
-cx-iq
+Customer Experience IQ
 =====
